@@ -58,5 +58,6 @@
 #/wp-content/themes
 /vendor/
 /.idea/
+/logs/
 
 latest.zip

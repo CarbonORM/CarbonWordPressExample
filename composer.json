@@ -17,7 +17,8 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "carbonorm/carbonwordpress": "^0.0.3"
+    "php": ">=8.2",
+    "carbonorm/carbonwordpress": "^0.0.12"
   },
   "scripts": {
     "post-install-cmd": [

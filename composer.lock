@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d9004a902157ff076fbd0bec1f47efc1",
+    "content-hash": "eafff9c63d10ef2b4fcbc5dd6092a8d0",
     "packages": [
         {
             "name": "carbonorm/carbonphp",
@@ -92,16 +92,16 @@
         },
         {
             "name": "carbonorm/carbonwordpress",
-            "version": "0.0.3",
+            "version": "0.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonORM/CarbonWordPress.git",
-                "reference": "ba03a01f499f72b09cb1723f2220d65f4b0f052c"
+                "reference": "349e5fe375f968ce7f2406b0ac13724275d4060d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonORM/CarbonWordPress/zipball/ba03a01f499f72b09cb1723f2220d65f4b0f052c",
-                "reference": "ba03a01f499f72b09cb1723f2220d65f4b0f052c",
+                "url": "https://api.github.com/repos/CarbonORM/CarbonWordPress/zipball/349e5fe375f968ce7f2406b0ac13724275d4060d",
+                "reference": "349e5fe375f968ce7f2406b0ac13724275d4060d",
                 "shasum": ""
             },
             "require": {
@@ -109,17 +109,10 @@
                 "composer/installers": "^2.0@dev",
                 "wp-cli/wp-cli-bundle": "dev-main"
             },
-            "type": "wordpress-muplugin",
-            "extra": {
-                "installer-paths": {
-                    "wp-content/mu-plugins/{$name}/": [
-                        "type:wordpress-muplugin"
-                    ]
-                }
-            },
+            "type": "wordpress-plugin",
             "autoload": {
                 "psr-4": {
-                    "CarbonWordpress\\": "carbonwordpress/"
+                    "CarbonWordPress\\": "carbonwordpress/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -132,12 +125,12 @@
                     "email": "richard@miles.systems"
                 }
             ],
-            "description": "Wordpress bindings and GUI for CarbonPHP. A wordpress Plugin.",
+            "description": "WordPress bindings and GUI for CarbonPHP. A WordPress Plugin.",
             "support": {
                 "issues": "https://github.com/CarbonORM/CarbonWordPress/issues",
-                "source": "https://github.com/CarbonORM/CarbonWordPress/tree/0.0.3"
+                "source": "https://github.com/CarbonORM/CarbonWordPress/tree/0.0.11"
             },
-            "time": "2023-12-17T21:56:24+00:00"
+            "time": "2023-12-18T00:06:02+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -4879,7 +4872,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=8.2"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
 }
