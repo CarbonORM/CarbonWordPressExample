@@ -18,7 +18,7 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=8.2",
-    "carbonorm/carbonwordpress": "^0.0.14"
+    "carbonorm/carbonwordpress": "dev-main"
   },
   "scripts": {
     "post-install-cmd": [
@@ -46,7 +46,7 @@
       "rm -rf wordpress",
       "rm -f latest.tar.gz"
     ],
-    "wordpress:install": "$( composer run wp:cli ) core install --url=127.0.0.1:8080 --title=CarbonPHP --admin_user=root --admin_password=password --admin_email=test@example.co",
+    "wordpress:install": "$( composer run wp:cli ) core install --url=127.0.0.1:8080 --title=CarbonWordPress --admin_user=root --admin_password=password --admin_email=test@example.com",
     "apache:linkApplication": [
       "mkdir -p ./logs/httpd/",
       "rm /usr/local/var/www",
