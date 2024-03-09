@@ -1,3 +1,11 @@
+# START CarbonORM WebSockets
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP:Connection} Upgrade [NC]
+    RewriteCond %{HTTP:Upgrade} websocket [NC]
+    RewriteRule ^/carbonorm/websocket/?(.*) ws://127.0.0.1:8888/carbonorm/websocket/$1  [P,L,E=noconntimeout:1,E=noabort:1]
+</IfModule>
+# END CarbonORM WebSockets
 DirectoryIndex index.php
 
 SetEnv XDEBUG_SESSION 1
@@ -73,9 +81,11 @@ Header always set Access-Control-Allow-Headers: *
     # @link https://serverfault.com/questions/940923/apache2-with-http-2-serves-some-content-with-h2-some-with-http-1-1
     # does it timeout in 60s? @link https://serverfault.com/questions/948312/apache-reverse-proxy-timeout-in-60-seconds
     # @link https://stackoverflow.com/questions/9629566/how-to-increase-apache-timeout-directive-in-htaccess
+
+    # /websocket/carbonorm
     RewriteCond %{HTTP:Connection} Upgrade [NC]
     RewriteCond %{HTTP:Upgrade} websocket [NC]
-    RewriteRule ^/?(.*) ws://127.0.0.1:8888/$1  [P,L,E=noconntimeout:1,E=noabort:1]
+    RewriteRule ^/websocket/carbonorm?(.*) ws://127.0.0.1:8888/$1  [P,L,E=noconntimeout:1,E=noabort:1]
     # on production websocket port is set in the virtual host configuation file; see 000-default.handlebars
 
 
