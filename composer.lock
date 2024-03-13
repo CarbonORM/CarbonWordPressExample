@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "carbonorm/carbonphp",
-            "version": "20.1.1",
+            "version": "20.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonORM/CarbonPHP.git",
-                "reference": "709ef4bbbadf8f3bb3964e3b975462aba7ecf647"
+                "reference": "9d6877c3f38bbbed83b17dc03273ca9ec27dd7b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonORM/CarbonPHP/zipball/709ef4bbbadf8f3bb3964e3b975462aba7ecf647",
-                "reference": "709ef4bbbadf8f3bb3964e3b975462aba7ecf647",
+                "url": "https://api.github.com/repos/CarbonORM/CarbonPHP/zipball/9d6877c3f38bbbed83b17dc03273ca9ec27dd7b2",
+                "reference": "9d6877c3f38bbbed83b17dc03273ca9ec27dd7b2",
                 "shasum": ""
             },
             "require": {
@@ -88,9 +88,9 @@
             ],
             "support": {
                 "issues": "https://github.com/CarbonORM/CarbonPHP/issues",
-                "source": "https://github.com/CarbonORM/CarbonPHP/tree/20.1.1"
+                "source": "https://github.com/CarbonORM/CarbonPHP/tree/20.1.3"
             },
-            "time": "2024-03-09T00:27:03+00:00"
+            "time": "2024-03-09T01:42:53+00:00"
         },
         {
             "name": "carbonorm/carbonwordpress",
@@ -98,17 +98,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonORM/CarbonWordPress.git",
-                "reference": "cd52b33038af6635cd46c2cecf7fdf094da75014"
+                "reference": "215d774cc6733780cae2804830480078c496c65a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonORM/CarbonWordPress/zipball/cd52b33038af6635cd46c2cecf7fdf094da75014",
-                "reference": "cd52b33038af6635cd46c2cecf7fdf094da75014",
+                "url": "https://api.github.com/repos/CarbonORM/CarbonWordPress/zipball/215d774cc6733780cae2804830480078c496c65a",
+                "reference": "215d774cc6733780cae2804830480078c496c65a",
                 "shasum": ""
             },
             "require": {
                 "carbonorm/carbonphp": "20.1.*",
                 "composer/installers": "^2.0@dev",
+                "ext-pcntl": "*",
                 "ext-posix": "*",
                 "ext-sockets": "*",
                 "wp-cli/wp-cli-bundle": "dev-main"
@@ -135,7 +136,7 @@
                 "issues": "https://github.com/CarbonORM/CarbonWordPress/issues",
                 "source": "https://github.com/CarbonORM/CarbonWordPress/tree/main"
             },
-            "time": "2024-03-08T00:31:14+00:00"
+            "time": "2024-03-09T01:28:59+00:00"
         },
         {
             "name": "composer/ca-bundle",
