@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d406febba201696c91e0c385e21d3525",
+    "content-hash": "1eda8861bba5e7250440839665c2f1a9",
     "packages": [
         {
             "name": "carbonorm/carbonphp",
-            "version": "20.1.3",
+            "version": "20.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonORM/CarbonPHP.git",
-                "reference": "9d6877c3f38bbbed83b17dc03273ca9ec27dd7b2"
+                "reference": "b9fee8ee78b7c67815207b27036a28d24d08b68c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonORM/CarbonPHP/zipball/9d6877c3f38bbbed83b17dc03273ca9ec27dd7b2",
-                "reference": "9d6877c3f38bbbed83b17dc03273ca9ec27dd7b2",
+                "url": "https://api.github.com/repos/CarbonORM/CarbonPHP/zipball/b9fee8ee78b7c67815207b27036a28d24d08b68c",
+                "reference": "b9fee8ee78b7c67815207b27036a28d24d08b68c",
                 "shasum": ""
             },
             "require": {
@@ -88,9 +88,9 @@
             ],
             "support": {
                 "issues": "https://github.com/CarbonORM/CarbonPHP/issues",
-                "source": "https://github.com/CarbonORM/CarbonPHP/tree/20.1.3"
+                "source": "https://github.com/CarbonORM/CarbonPHP/tree/20.1.9"
             },
-            "time": "2024-03-09T01:42:53+00:00"
+            "time": "2024-03-13T17:03:56+00:00"
         },
         {
             "name": "carbonorm/carbonwordpress",
@@ -98,12 +98,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonORM/CarbonWordPress.git",
-                "reference": "215d774cc6733780cae2804830480078c496c65a"
+                "reference": "c67e5188e7bcdbf1539d1443c0b1d688f346f22a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonORM/CarbonWordPress/zipball/215d774cc6733780cae2804830480078c496c65a",
-                "reference": "215d774cc6733780cae2804830480078c496c65a",
+                "url": "https://api.github.com/repos/CarbonORM/CarbonWordPress/zipball/c67e5188e7bcdbf1539d1443c0b1d688f346f22a",
+                "reference": "c67e5188e7bcdbf1539d1443c0b1d688f346f22a",
                 "shasum": ""
             },
             "require": {
@@ -113,6 +113,9 @@
                 "ext-posix": "*",
                 "ext-sockets": "*",
                 "wp-cli/wp-cli-bundle": "dev-main"
+            },
+            "require-dev": {
+                "richardtmiles/php-git-hooks": "dev-main"
             },
             "default-branch": true,
             "type": "wordpress-plugin",
@@ -134,9 +137,9 @@
             "description": "WordPress bindings and GUI for CarbonPHP. A WordPress Plugin.",
             "support": {
                 "issues": "https://github.com/CarbonORM/CarbonWordPress/issues",
-                "source": "https://github.com/CarbonORM/CarbonWordPress/tree/main"
+                "source": "https://github.com/CarbonORM/CarbonWordPress/tree/1.1.2"
             },
-            "time": "2024-03-09T01:28:59+00:00"
+            "time": "2024-03-14T07:50:19+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -295,12 +298,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "57427e6227f3bd9093daedab2a64feeb6cced4fa"
+                "reference": "94fe2945456df51e122a492b8d14ac4b54c1d2ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/57427e6227f3bd9093daedab2a64feeb6cced4fa",
-                "reference": "57427e6227f3bd9093daedab2a64feeb6cced4fa",
+                "url": "https://api.github.com/repos/composer/composer/zipball/94fe2945456df51e122a492b8d14ac4b54c1d2ce",
+                "reference": "94fe2945456df51e122a492b8d14ac4b54c1d2ce",
                 "shasum": ""
             },
             "require": {
@@ -402,7 +405,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-08T09:44:47+00:00"
+            "time": "2024-03-11T16:32:50+00:00"
         },
         {
             "name": "composer/installers",
@@ -1707,12 +1710,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "3a6b6bf5ce1b8a497ac75cb5d31cc7376f9a902f"
+                "reference": "31c74a59d8bffdcec73adb43b398f6942f7dc26b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/3a6b6bf5ce1b8a497ac75cb5d31cc7376f9a902f",
-                "reference": "3a6b6bf5ce1b8a497ac75cb5d31cc7376f9a902f",
+                "url": "https://api.github.com/repos/symfony/console/zipball/31c74a59d8bffdcec73adb43b398f6942f7dc26b",
+                "reference": "31c74a59d8bffdcec73adb43b398f6942f7dc26b",
                 "shasum": ""
             },
             "require": {
@@ -1792,7 +1795,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-22T20:28:06+00:00"
+            "time": "2024-03-04T12:49:13+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -2628,12 +2631,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "3d0a98879bbc7585aff5f9a5a539074328cc2ca0"
+                "reference": "ef964850371aca5def9fc8a3059d9b1690bb3b6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/3d0a98879bbc7585aff5f9a5a539074328cc2ca0",
-                "reference": "3d0a98879bbc7585aff5f9a5a539074328cc2ca0",
+                "url": "https://api.github.com/repos/symfony/string/zipball/ef964850371aca5def9fc8a3059d9b1690bb3b6c",
+                "reference": "ef964850371aca5def9fc8a3059d9b1690bb3b6c",
                 "shasum": ""
             },
             "require": {
@@ -2707,7 +2710,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-03T19:41:36+00:00"
+            "time": "2024-03-08T12:55:53+00:00"
         },
         {
             "name": "wp-cli/cache-command",
@@ -2926,12 +2929,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/core-command.git",
-                "reference": "d1ef1de31d8bc409d3135a5c3f8a8a5bc2b5f1c9"
+                "reference": "5774d7d9c0137b696584f87f04d5953475434656"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/core-command/zipball/d1ef1de31d8bc409d3135a5c3f8a8a5bc2b5f1c9",
-                "reference": "d1ef1de31d8bc409d3135a5c3f8a8a5bc2b5f1c9",
+                "url": "https://api.github.com/repos/wp-cli/core-command/zipball/5774d7d9c0137b696584f87f04d5953475434656",
+                "reference": "5774d7d9c0137b696584f87f04d5953475434656",
                 "shasum": ""
             },
             "require": {
@@ -2990,7 +2993,7 @@
                 "issues": "https://github.com/wp-cli/core-command/issues",
                 "source": "https://github.com/wp-cli/core-command/tree/main"
             },
-            "time": "2024-03-04T09:57:54+00:00"
+            "time": "2024-03-14T07:20:22+00:00"
         },
         {
             "name": "wp-cli/cron-command",
@@ -3211,12 +3214,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/entity-command.git",
-                "reference": "f93114fac6ec1e5bef8df63cdc0d877b12bdacc6"
+                "reference": "22d726dd3ce09a7a70ca1ac2c935e2f0450894a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/entity-command/zipball/f93114fac6ec1e5bef8df63cdc0d877b12bdacc6",
-                "reference": "f93114fac6ec1e5bef8df63cdc0d877b12bdacc6",
+                "url": "https://api.github.com/repos/wp-cli/entity-command/zipball/22d726dd3ce09a7a70ca1ac2c935e2f0450894a4",
+                "reference": "22d726dd3ce09a7a70ca1ac2c935e2f0450894a4",
                 "shasum": ""
             },
             "require": {
@@ -3435,7 +3438,7 @@
                 "issues": "https://github.com/wp-cli/entity-command/issues",
                 "source": "https://github.com/wp-cli/entity-command/tree/main"
             },
-            "time": "2024-03-07T06:52:23+00:00"
+            "time": "2024-03-12T06:28:07+00:00"
         },
         {
             "name": "wp-cli/eval-command",
@@ -3665,12 +3668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/i18n-command.git",
-                "reference": "b7225568c5b13912278ed64603d35fa050e7d821"
+                "reference": "e29d18189b4291eca9d06b7da1e85d4736d92c5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/i18n-command/zipball/b7225568c5b13912278ed64603d35fa050e7d821",
-                "reference": "b7225568c5b13912278ed64603d35fa050e7d821",
+                "url": "https://api.github.com/repos/wp-cli/i18n-command/zipball/e29d18189b4291eca9d06b7da1e85d4736d92c5a",
+                "reference": "e29d18189b4291eca9d06b7da1e85d4736d92c5a",
                 "shasum": ""
             },
             "require": {
@@ -3727,7 +3730,7 @@
                 "issues": "https://github.com/wp-cli/i18n-command/issues",
                 "source": "https://github.com/wp-cli/i18n-command/tree/main"
             },
-            "time": "2024-02-29T10:45:50+00:00"
+            "time": "2024-03-11T13:00:54+00:00"
         },
         {
             "name": "wp-cli/import-command",
@@ -4686,12 +4689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/wp-cli.git",
-                "reference": "a76265b63b6900a0bcc96340dc141600a1235ea2"
+                "reference": "9aec20fd711a8b7442cc2f89e32af276e3f16045"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/a76265b63b6900a0bcc96340dc141600a1235ea2",
-                "reference": "a76265b63b6900a0bcc96340dc141600a1235ea2",
+                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/9aec20fd711a8b7442cc2f89e32af276e3f16045",
+                "reference": "9aec20fd711a8b7442cc2f89e32af276e3f16045",
                 "shasum": ""
             },
             "require": {
@@ -4749,7 +4752,7 @@
                 "issues": "https://github.com/wp-cli/wp-cli/issues",
                 "source": "https://github.com/wp-cli/wp-cli"
             },
-            "time": "2024-03-07T07:24:05+00:00"
+            "time": "2024-03-14T07:12:08+00:00"
         },
         {
             "name": "wp-cli/wp-cli-bundle",
@@ -4870,7 +4873,50 @@
             "time": "2023-11-10T14:28:03+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "richardtmiles/php-git-hooks",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RichardTMiles/php-git-hooks.git",
+                "reference": "98bee6da71feba648abf9688af7257778b1d5726"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RichardTMiles/php-git-hooks/zipball/98bee6da71feba648abf9688af7257778b1d5726",
+                "reference": "98bee6da71feba648abf9688af7257778b1d5726",
+                "shasum": ""
+            },
+            "require": {
+                "carbonorm/carbonphp": ">=20.1.9",
+                "php": ">=8.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpGitHooks\\": "phpgithooks/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "mit"
+            ],
+            "authors": [
+                {
+                    "name": "richardtmiles",
+                    "email": "richard@miles.systems"
+                }
+            ],
+            "description": "version and release management",
+            "support": {
+                "issues": "https://github.com/RichardTMiles/php-git-hooks/issues",
+                "source": "https://github.com/RichardTMiles/php-git-hooks/tree/main"
+            },
+            "time": "2024-03-14T08:04:38+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
