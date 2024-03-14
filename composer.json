@@ -23,7 +23,8 @@
   "scripts": {
     "post-install-cmd": [
       "@wp",
-      "PhpGitHooks\\PhpGitHooks::install"
+      "PhpGitHooks\\PhpGitHooks::install",
+      "@apache:linkApplication"
     ],
     "post-update-cmd": [
       "@wp",

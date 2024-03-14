@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "012ecc94952f5a430f16a40c77b165aa",
+    "content-hash": "1eda8861bba5e7250440839665c2f1a9",
     "packages": [
         {
             "name": "carbonorm/carbonphp",
-            "version": "20.1.9",
+            "version": "dev-lts",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonORM/CarbonPHP.git",
-                "reference": "b9fee8ee78b7c67815207b27036a28d24d08b68c"
+                "reference": "4483e99aaf16f7555208b0fa656de370bccbf7e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonORM/CarbonPHP/zipball/b9fee8ee78b7c67815207b27036a28d24d08b68c",
-                "reference": "b9fee8ee78b7c67815207b27036a28d24d08b68c",
+                "url": "https://api.github.com/repos/CarbonORM/CarbonPHP/zipball/4483e99aaf16f7555208b0fa656de370bccbf7e4",
+                "reference": "4483e99aaf16f7555208b0fa656de370bccbf7e4",
                 "shasum": ""
             },
             "require": {
@@ -41,9 +41,11 @@
                 "phpmetrics/phpmetrics": ">=2.7",
                 "phpunit/phpunit": ">=9.5",
                 "phpunit/phpunit-selenium": ">=9.0.1",
+                "richardtmiles/php-git-hooks": "^0.2.5",
                 "se/selenium-server-standalone": ">=3.141.59",
                 "wp-cli/wp-cli-bundle": ">=2.6.0"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -88,9 +90,9 @@
             ],
             "support": {
                 "issues": "https://github.com/CarbonORM/CarbonPHP/issues",
-                "source": "https://github.com/CarbonORM/CarbonPHP/tree/20.1.9"
+                "source": "https://github.com/CarbonORM/CarbonPHP/tree/lts"
             },
-            "time": "2024-03-13T17:03:56+00:00"
+            "time": "2024-03-14T09:01:05+00:00"
         },
         {
             "name": "carbonorm/carbonwordpress",
@@ -98,16 +100,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonORM/CarbonWordPress.git",
-                "reference": "c67e5188e7bcdbf1539d1443c0b1d688f346f22a"
+                "reference": "18af862656d6948f8c210ae881afe25475d229f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonORM/CarbonWordPress/zipball/c67e5188e7bcdbf1539d1443c0b1d688f346f22a",
-                "reference": "c67e5188e7bcdbf1539d1443c0b1d688f346f22a",
+                "url": "https://api.github.com/repos/CarbonORM/CarbonWordPress/zipball/18af862656d6948f8c210ae881afe25475d229f7",
+                "reference": "18af862656d6948f8c210ae881afe25475d229f7",
                 "shasum": ""
             },
             "require": {
-                "carbonorm/carbonphp": "20.1.*",
+                "carbonorm/carbonphp": "dev-lts",
                 "composer/installers": "^2.0@dev",
                 "ext-pcntl": "*",
                 "ext-posix": "*",
@@ -137,9 +139,9 @@
             "description": "WordPress bindings and GUI for CarbonPHP. A WordPress Plugin.",
             "support": {
                 "issues": "https://github.com/CarbonORM/CarbonWordPress/issues",
-                "source": "https://github.com/CarbonORM/CarbonWordPress/tree/1.1.2"
+                "source": "https://github.com/CarbonORM/CarbonWordPress/tree/main"
             },
-            "time": "2024-03-14T07:50:19+00:00"
+            "time": "2024-03-14T09:16:41+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -3941,12 +3943,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/media-command.git",
-                "reference": "0a7982614628d4fc6d6c9c4b8142a759ba9c4812"
+                "reference": "210cccf80f4faa38c0c608768089edf7acf2b319"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/media-command/zipball/0a7982614628d4fc6d6c9c4b8142a759ba9c4812",
-                "reference": "0a7982614628d4fc6d6c9c4b8142a759ba9c4812",
+                "url": "https://api.github.com/repos/wp-cli/media-command/zipball/210cccf80f4faa38c0c608768089edf7acf2b319",
+                "reference": "210cccf80f4faa38c0c608768089edf7acf2b319",
                 "shasum": ""
             },
             "require": {
@@ -3996,7 +3998,7 @@
                 "issues": "https://github.com/wp-cli/media-command/issues",
                 "source": "https://github.com/wp-cli/media-command/tree/main"
             },
-            "time": "2024-02-22T11:21:53+00:00"
+            "time": "2024-03-14T09:04:20+00:00"
         },
         {
             "name": "wp-cli/mustangostang-spyc",
@@ -4880,12 +4882,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RichardTMiles/php-git-hooks.git",
-                "reference": "98bee6da71feba648abf9688af7257778b1d5726"
+                "reference": "fad4ca474c9ec724fbaefdaab0a9be7650622646"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RichardTMiles/php-git-hooks/zipball/98bee6da71feba648abf9688af7257778b1d5726",
-                "reference": "98bee6da71feba648abf9688af7257778b1d5726",
+                "url": "https://api.github.com/repos/RichardTMiles/php-git-hooks/zipball/fad4ca474c9ec724fbaefdaab0a9be7650622646",
+                "reference": "fad4ca474c9ec724fbaefdaab0a9be7650622646",
                 "shasum": ""
             },
             "require": {
@@ -4914,7 +4916,7 @@
                 "issues": "https://github.com/RichardTMiles/php-git-hooks/issues",
                 "source": "https://github.com/RichardTMiles/php-git-hooks/tree/main"
             },
-            "time": "2024-03-14T08:04:38+00:00"
+            "time": "2024-03-14T09:03:46+00:00"
         }
     ],
     "aliases": [],
