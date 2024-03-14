@@ -4920,7 +4920,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "carbonorm/carbonwordpress": 20
+        "carbonorm/carbonwordpress": 20,
+        "richardtmiles/php-git-hooks": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
