@@ -1,14 +1,9 @@
 {
-  "name": "carbonorm/carbonwordpress-template",
+  "name": "carbonorm/carbonwordpressexample",
   "description": "WordPress bindings and GUI for CarbonPHP. A wordpress Plugin.",
   "type": "library",
   "license": "mit",
   "version": "0.0.2",
-  "autoload": {
-    "psr-4": {
-      "C6\\": "c6/"
-    }
-  },
   "authors": [
     {
       "name": "richardtmiles",

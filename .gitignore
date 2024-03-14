@@ -60,5 +60,6 @@
 /tmp/
 /cache/
 mysql.cnf
+migration-license.php
 
 latest.zip
