@@ -18,8 +18,7 @@
   "scripts": {
     "post-install-cmd": [
       "@wp",
-      "PhpGitHooks\\PhpGitHooks::install",
-      "@apache:linkApplication"
+      "PhpGitHooks\\PhpGitHooks::install"
     ],
     "post-update-cmd": [
       "@wp",
@@ -40,7 +39,7 @@
       "rm -rf wordpress",
       "rm -f latest.tar.gz"
     ],
-    "wordpress:install": "$( composer run wp:cli ) core install --url=127.0.0.1:8080 --title=CarbonWordPress --admin_user=root --admin_password=password --admin_email=test@example.com",
+    "wordpress:install": "$( composer run wp:cli ) core install --url=127.0.0.1:8080 --title=CarbonWordPress --admin_user=carbonorm '--admin_password=c6P@$s30rd#9-0-2-1-0' --admin_email=test@example.com",
     "apache:linkApplication": [
       "mkdir -p ./logs/httpd/",
       "rm /usr/local/var/www",
@@ -54,9 +53,15 @@
   },
   "extra": {
     "installer-paths": {
-      "wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-      "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-      "wp-content/themes/{$name}/": ["type:wordpress-theme"]
+      "wp-content/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "wp-content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "wp-content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
     }
   },
   "require-dev": {
