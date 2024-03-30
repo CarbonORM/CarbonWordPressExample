@@ -1,7 +1,4 @@
-DirectoryIndex index.php
-
-SetEnv XDEBUG_SESSION 1
-SetEnv DBGP_IDEKEY XDEBUG_INTELLIJ
+# START CarbonPHP (CarbonPHP) - GENERATED CODE
 
 # protect against DOS attacks by limiting file upload size [bytes]
 LimitRequestBody 10240000
@@ -25,6 +22,718 @@ LimitRequestBody 10240000
     Order allow,deny
     Deny from all
 </If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+# https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
+# SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=
+# Header always set Access-Control-Allow-Origin %{CORS_ALLOW_ORIGIN}e env=CORS_ALLOW_ORIGIN
+# Header merge Vary "Origin"
+
+# todo - Cached for a day - 86400
+# Header always set Access-Control-Max-Age: 0
+# Header always set Access-Control-Allow-Methods "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+# Header always set Access-Control-Allow-Headers: *
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files mysqldump.sql>
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "(composer\.json)|(\.(htaccess|htpasswd|md|ini|log|sh|inc|bak|sql|yml|yaml|iml|cnf|gz|phar|webp))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+<If "%{REQUEST_URI} =~ m#^/\..*#">
+    Order allow,deny
+    Deny from all
+</If>
+
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 YEAR - 29030400; 1 WEEK - 604800; 2 DAYS - 172800; 1 MIN  - 60
+    Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|xml|txt|css|js|svg|webp)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php|hbs|json|map)$">
+    Header set Cache-Control "max-age=0, private, public"
+</FilesMatch>
+
+# END CarbonPHP .htaccess injection - DO NOT MODIFY GENERATED CODE
+
+DirectoryIndex index.php
+
+SetEnv XDEBUG_SESSION 1
+SetEnv DBGP_IDEKEY XDEBUG_INTELLIJ
+
+# protect against DOS attacks by limiting file upload size [bytes]
+LimitRequestBody 10240000
+
+
 
 # https://stackoverflow.com/questions/14003332/access-control-allow-origin-wildcard-subdomains-ports-and-protocols/27990162#27990162
 SetEnvIf Origin ^(https?://.*(?::\d{1,5})?)$ CORS_ALLOW_ORIGIN=$1

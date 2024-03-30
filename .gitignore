@@ -63,3 +63,7 @@ mysql.cnf
 migration-license.php
 
 latest.zip
+
+# jetbrains
+.idea/
+*.iml
